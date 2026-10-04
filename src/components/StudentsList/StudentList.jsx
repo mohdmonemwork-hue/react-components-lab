@@ -9,11 +9,11 @@ function StudentsList() {
     "Raghad",
     "Sayed Hamed",
   ];
-  return students.map((oneStudent) => {
+  return students.map((oneStudent) => (
     <ul>
-      <li>{oneStudent}</li>
-    </ul>;
-  });
+      <li key={oneStudent}>{oneStudent}</li>
+    </ul>
+  ));
 }
 
 export default StudentsList;
